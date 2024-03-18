@@ -1,0 +1,28 @@
+/* Global styling */
+
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1{
+
+} */
+
+/* Nav Bar Styling */
+
+#navbar{
+    background-color: #4B0082 !important;
+}
+
+#navbar nav-item{
+    color: #ffff !important;
+}
+
+img[alt='logo']{
+    height: 60px;
+    width: 160px
+}
