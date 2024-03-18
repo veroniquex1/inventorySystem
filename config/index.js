@@ -6,7 +6,8 @@ let connection = createConnection({
     host: process.env.db_host,
     database: process.env.db_name,
     user: process.env.db_userName,
-    password: process.env.db_userPass
+    password: process.env.db_userPass,
+    multipleStatements: true,
 });
 
 export {
