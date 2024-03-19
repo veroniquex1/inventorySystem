@@ -15,9 +15,9 @@
           <div class="col d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection"></use>
-              </svg>
+              <a href="#">
+                <img src="https://i.ibb.co/1XKh8JZ/package.png" alt="icon">
+              </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Products</h4>
             <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
@@ -26,9 +26,9 @@
           <div class="col d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#gear-fill"></use>
-              </svg>
+              <a href="#">
+                <img src="https://i.ibb.co/mqCBXvG/supplier.png" alt="icon">
+              </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Suppliers</h4>
             <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
@@ -38,7 +38,7 @@
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
               <a href="/users">
-                <img src="#" alt="icon" loading="lazy">
+                <img src="https://iili.io/JXV4wUG.png" alt="icon" loading="lazy">
               </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Users</h4>
@@ -48,9 +48,9 @@
           <div class="col d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#table"></use>
-              </svg>
+              <a href="">
+                <img src="https://i.ibb.co/myzgQj1/report.png" alt="icon" loading="lazy">
+              </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Reports</h4>
             <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
