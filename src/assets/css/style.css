@@ -49,8 +49,16 @@ img[alt="icon"]{
 
 /* Login Styling */
 
-#signinBtn{
+#signinBtn, #submitBtn{
     background-color: #4B0082 !important;
+    border: solid 1px #4B0082;
+    border-radius: 7px;
+}
+
+/* Contact Page Styling */
+
+#callBtn{
+    color: #4B0082 !important;
     border: solid 1px #4B0082;
     border-radius: 7px;
 }
