@@ -8,11 +8,7 @@
     box-sizing: border-box;
 }
 
-/* h1{
-
-} */
-
-/* Nav Bar Styling */
+/* Navbar Styling */
 
 #navbar{
     background-color: #4B0082 !important;
@@ -25,4 +21,12 @@
 img[alt='logo']{
     height: 60px;
     width: 160px
+}
+
+/* Home view Styling */
+
+img [alt="icon"]{
+    height: 20px;
+    width: 20px;
+    border: solid 2px red;
 }
