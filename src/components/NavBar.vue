@@ -13,22 +13,25 @@
             <div class="navbar-collapse justify-content-md-center collapse show" id="navbarsExample10" style="">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false">Dashboard</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Products</a></li>
-                            <li><a class="dropdown-item" href="#">Suppliers</a></li>
-                            <li><a class="dropdown-item" href="#">Users</a></li>
+                            <li><a class="dropdown-item" href="/products">Products</a></li>
+                            <li><a class="dropdown-item" href="/suppliers">Suppliers</a></li>
+                            <li><a class="dropdown-item" href="/users">Users</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contact</a>
+                        <a class="nav-link " href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/login">Login</a>
                     </li>
                 </ul>
             </div>
