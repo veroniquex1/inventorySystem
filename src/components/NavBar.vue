@@ -18,6 +18,7 @@
                         <li><a class="dropdown-item" href="/products">Products</a></li>
                         <li><a class="dropdown-item" href="/suppliers">Suppliers</a></li>
                         <li><a class="dropdown-item" href="/users">Users</a></li>
+                        <li><a class="dropdown-item" href="/reports">Reports</a></li>
                     </ul>
                 </li>
                 <li><a href="/contact" class="nav-link px-2">Contact</a></li>

@@ -16,18 +16,19 @@
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
               <a href="#">
-                <img src="https://i.ibb.co/1XKh8JZ/package.png" alt="icon">
+                <img src="https://i.ibb.co/1XKh8JZ/package.png" alt="icon" loading="lazy">
               </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Products</h4>
             <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
           </div>
 
+
           <div class="col d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
               <a href="#">
-                <img src="https://i.ibb.co/mqCBXvG/supplier.png" alt="icon">
+                <img src="https://i.ibb.co/mqCBXvG/supplier.png" alt="icon" loading="lazy">
               </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Suppliers</h4>
@@ -49,7 +50,7 @@
             <div
               class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
               <a href="">
-                <img src="https://i.ibb.co/myzgQj1/report.png" alt="icon" loading="lazy">
+                <img src="https://i.ibb.co/pQYSzFt/diagram.png" alt="icon" loading="lazy">
               </a>
             </div>
             <h4 class="fw-semibold mb-0 text-body-emphasis">Reports</h4>
