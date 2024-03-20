@@ -6,6 +6,7 @@
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
                 <th scope="col">Handle</th>
+                <th scope="col">Edit | Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -13,6 +14,7 @@
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
+                <td>@mdo</td>
                 <td>@mdo</td>
             </tr>
             <tr>

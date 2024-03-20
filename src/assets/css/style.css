@@ -55,6 +55,11 @@ img[alt="icon"]{
     border-radius: 7px;
 }
 
+#formContainer{
+    border: #4B0082 solid 1px;
+    border-radius: 7px;
+}
+
 /* Contact Page Styling */
 
 #callBtn{
@@ -62,3 +67,12 @@ img[alt="icon"]{
     border: solid 1px #4B0082;
     border-radius: 7px;
 }
+
+
+/* Product Page Styling */
+#button{
+    background-color: #4B0082;
+    color: #ffff;
+    margin-left: 5px;
+}
+
