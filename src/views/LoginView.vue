@@ -2,7 +2,7 @@
     <div class="container px-4 py-5">
         <h2 class="pb-2 border-bottom d-flex justify-content-start display-5">Login</h2>
     </div>
-    <div class="container  form-signin w-50 m-auto">
+    <div class="container  form-signin w-25 m-auto" id="formContainer">
         <form>
             <img class="mb-4" src="https://i.ibb.co/y8fjpND/scourgify-initial-white-bg.png" alt="initialLogo"
                 height="65">
@@ -25,7 +25,16 @@
                     Remember me
                 </label>
             </div>
-            <button class="btn btn-primary w-100 py-2" type="submit" fdprocessedid="degj2q" id="signinBtn">Sign in</button>
+            <div>
+                <a href="/login">
+                    <button type="button" class="btn" id="button">Sign in</button>
+                </a>
+                <a href="/register">
+                    <button type="button" class="btn" id="button">Sign-up</button>
+                </a>
+            </div>
+            <!-- <button class="btn btn-primary w-100 py-2" type="submit" fdprocessedid="degj2q" id="signinBtn">Sign
+                in</button> -->
             <p class="mt-5 mb-3 text-body-secondary">© Scourgify</p>
         </form>
     </div>

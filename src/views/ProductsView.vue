@@ -20,12 +20,20 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
-                <td>@mdo</td>
+                <td>
+                    <button class="btn" id="button">Edit</button>
+                    <button class="btn" id="button">Delete</button>
+                </td>
             </tr>
         </tbody>
     </table>
+    <div>
+        <button class="btn" id="button">Add Product</button>
+    </div>
 </template>
 
 <script>
 
 </script>
+
+<style src="../assets/css/style.css"></style>
