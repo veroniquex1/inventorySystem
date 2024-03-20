@@ -1,5 +1,5 @@
-import connection from '../config/index.js'
-import generateToken from '../middleware/userAuthentication.js'
+import { connection } from '../config/index.js'
+import { generateToken } from '../middleware/userAuthentication.js'
 import {
     hash,
     compare
