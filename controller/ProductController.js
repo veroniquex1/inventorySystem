@@ -1,11 +1,13 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import { products } from '../model/index.js'
+import {
+    products
+} from '../model/index.js'
 
 const productRouter = express.Router()
 
 // fetch products
-productRouter.get('/', (req, res) => {
+productRouter.get('/products', (req, res) => {
     try {
         products.fetchProducts(req, res)
     } catch (error) {
@@ -17,7 +19,7 @@ productRouter.get('/', (req, res) => {
 })
 
 // fetch single product
-productRouter.get('/:id', (req, res) => {
+productRouter.get('/product/:id', (req, res) => {
     try {
         products.fetchProduct(req, res)
     } catch (error) {
@@ -65,5 +67,6 @@ productRouter.delete('/delete/:id', (req, res) => {
 })
 
 export {
-    productRouter, express
+    productRouter,
+    express
 }

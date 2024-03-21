@@ -5,7 +5,7 @@ import { suppliers } from '../model/index.js'
 const supplierRouter = express.Router()
 
 // fetch suppliers
-supplierRouter.get('/', (req, res) => {
+supplierRouter.get('/suppliers', (req, res) => {
     try {
         suppliers.fetchSuppliers(req, res)
     } catch (error) {
@@ -17,7 +17,7 @@ supplierRouter.get('/', (req, res) => {
 })
 
 // fetch single  supplier 
-supplierRouter.get('/:id', (req, res) => {
+supplierRouter.get('/supplier/:id', (req, res) => {
     try {
         suppliers.fetchSupplier(req, res)
     } catch (error) {
