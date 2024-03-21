@@ -1,12 +1,15 @@
-import { createConnection } from "mysql";
+import {
+    createPool
+} from "mysql";
 import { config } from "dotenv";
 config()
 
-let connection = createConnection({
-    host: process.env.db_host,
-    database: process.env.db_name,
-    user: process.env.db_userName,
-    password: process.env.db_userPwd,
+let connection = createPool({
+    host: process.env.DB_host,
+    database: process.env.DB_name,
+    user: process.env.DB_userName,
+    password: process.env.DB_userPwd,
+    port: '4500',
     multipleStatements: true,
 });
 

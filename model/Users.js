@@ -17,6 +17,7 @@ class Users {
             if (error) throw error
             res.json({
                 status: res.errorCode,
+                message: "could not retreive users",
                 results
             })
         })
