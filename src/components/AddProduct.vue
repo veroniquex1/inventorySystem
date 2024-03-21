@@ -66,7 +66,7 @@ export default {
         return {
             payload: {
                 prodID: null,
-                prodNo: ""
+                prodNo: "",
                 prodName: "",
                 quantity: null,
                 cost: null,
