@@ -9,13 +9,14 @@
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="#">
+                <li class="ms-3"><a class="text-body-secondary"
+                        href="https://www.instagram.com/_vdrossouw?igsh=d2xsZDc2ejF3NnR0">
                         <img src="https://iili.io/Jhnqopj.png" alt="footer-icon">
                     </a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#">
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/veroniquex1">
                         <img src="https://iili.io/Jhnqcva.png" alt="footer-icon">
                     </a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#">
+                <li class="ms-3"><a class="text-body-secondary" href="mailto:vdrossouw@gmail.com">
                         <img src="https://iili.io/JhnqbnV.png" alt="footer-icon">
                     </a></li>
             </ul>
