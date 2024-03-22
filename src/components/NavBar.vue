@@ -18,7 +18,6 @@
                         <li><a class="dropdown-item" href="/products">Manage Products</a></li>
                         <li><a class="dropdown-item" href="/suppliers">Manage Suppliers</a></li>
                         <li><a class="dropdown-item" href="/users">Manage Users</a></li>
-                        <li><a class="dropdown-item" href="/reports">Reports</a></li>
                     </ul>
                 </li>
                 <li><a href="/contact" class="nav-link px-2">Contact</a></li>

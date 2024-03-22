@@ -86,3 +86,12 @@ img[alt='footer-icon']{
     height: 20px;
     width: 20px;
 }
+
+/* crud buttons */
+
+#crudBtn{
+    background-color: #4B0082;
+    color: #ffff;
+    border: #4B0082 solid 1px;
+    border-radius: 7px;
+}

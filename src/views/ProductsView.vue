@@ -15,7 +15,7 @@
                 <th scope="col">Category</th>
                 <!-- <th scope="col">Total Cost</th> -->
                 <th scope="col">Prod URL</th>
-                <th scope="col">Delete | Edit</th>
+                <th scope="col">Edit | Delete</th>
             </tr>
         </thead>
         <tbody v-if="products">
@@ -29,17 +29,16 @@
                 <td>{{ product.prodURL }}</td>
                 <td>{{ product.prodDesc }}</td>
                 <td class="d-flex justify-content-between">
-                    <UpdateProduct :product="product" />
+                    <UpdateProduct :product="product" id="crudBtn" />
                     <button class="btn deleteButton" @click="event => deleteProduct(product.prodID)"
                         id="button">Delete</button>
-                    <!-- <button class="btn" @click="event => editProduct(product.prodID)" id=" button">Edit</button> -->
                 </td>
             </tr>
         </tbody>
     </table>
     <div>
-        <AddProduct class="btn" id="addBtn"></AddProduct>
-        <!-- <button class="btn addButton" @click="event => AddProduct(product.prodID)" id="button">Add Product</button> -->
+        <AddProduct class="btn" id="crudBtn"></AddProduct>
+        <button @click="downloadPDF" class="btn" id="crudBtn">Download Report</button>
     </div>
 </template>
 
@@ -47,6 +46,8 @@
 
 import AddProduct from '../components/AddProduct.vue';
 import UpdateProduct from '../components/UpdateProduct.vue';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 export default {
     components: {
         UpdateProduct,
@@ -67,6 +68,17 @@ export default {
         UpdateProduct(product) {
             let editProduct = { productID: product.prodID, prodNo: product.prodNo, productName: product.prodName, quantity: product.quantity, amount: product.amount, Category: product.category, prodURL: product.prodURL, prodDesc: product.prodDesc }
             this.$store.dispatch('UpdateProduct', { id: product.prodID, data: editProduct })
+        },
+        downloadPDF() {
+            const element = document.querySelector('.table-responsive');
+            html2canvas(element).then(canvas => {
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                const imgData = canvas.toDataURL('image/png');
+                const imgWidth = 208;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                pdf.save('products_report.pdf');
+            });
         }
     }
 }
