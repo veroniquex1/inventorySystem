@@ -9,8 +9,8 @@ let connection = createPool({
     database: process.env.DB_name,
     user: process.env.DB_userName,
     password: process.env.DB_userPwd,
-    port: '4500',
     multipleStatements: true,
+    connectionLimit:30
 });
 
 export {

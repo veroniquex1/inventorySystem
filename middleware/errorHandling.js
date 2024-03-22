@@ -1,7 +1,10 @@
 function errorHandling(error, req, res, next) {
-    if (error || errorCode >= 400) {
-        status: error.status || res.errorCode || 500;
-        message: 'An  unexpected error occurred. Please try again';
+    if (error || res.errorCode >= 400) {
+        res.json({
+            status: error.status || res.errorCode || 500,
+            message: 'An  unexpected error occurred. Please try again'
+        })
+        
     } else {
         next()
     }
