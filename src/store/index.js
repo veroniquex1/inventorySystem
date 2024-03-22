@@ -70,7 +70,7 @@ export default createStore({
         })
       }
     },
-    
+
     // fetching users
     async fetchUsers(context) {
       try {

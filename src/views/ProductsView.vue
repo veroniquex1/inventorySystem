@@ -13,7 +13,7 @@
                 <th scope="col">Quantity</th>
                 <th scope="col">Cost</th>
                 <th scope="col">Category</th>
-                <th scope="col">Total Cost</th>
+                <!-- <th scope="col">Total Cost</th> -->
                 <th scope="col">Prod URL</th>
                 <th scope="col">Delete | Edit</th>
             </tr>
@@ -21,15 +21,16 @@
         <tbody v-if="products">
             <tr v-for="product in products" :key="product.prodID">
                 <td>{{ product.prodID }}</td>
+                <td>{{ product.prodNo }}</td>
                 <td>{{ product.prodName }}</td>
                 <td>{{ product.quantity }}</td>
-                <td>R {{ product.amount }}</td>
-                <td>{{ product.Category }}</td>
+                <td>R {{ product.cost }}</td>
+                <td>{{ product.category }}</td>
                 <td>{{ product.prodURL }}</td>
                 <td>{{ product.prodDesc }}</td>
                 <td class="d-flex justify-content-between">
                     <UpdateProduct :product="product" />
-                    <button class="btn deleteButton" @click="event => deleteProduct(product.prodID) "
+                    <button class="btn deleteButton" @click="event => deleteProduct(product.prodID)"
                         id="button">Delete</button>
                     <button class="btn" @click="event => editProduct(product.prodID)" id=" button">Edit</button>
                 </td>
@@ -37,7 +38,8 @@
         </tbody>
     </table>
     <div>
-        <button class="btn addButton" @click="event => AddProduct(product.prodID)" id="button">Add Product</button>
+        <AddProduct></AddProduct>
+        <!-- <button class="btn addButton" @click="event => AddProduct(product.prodID)" id="button">Add Product</button> -->
     </div>
 </template>
 
