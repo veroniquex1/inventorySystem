@@ -32,13 +32,13 @@
                     <UpdateProduct :product="product" />
                     <button class="btn deleteButton" @click="event => deleteProduct(product.prodID)"
                         id="button">Delete</button>
-                    <button class="btn" @click="event => editProduct(product.prodID)" id=" button">Edit</button>
+                    <!-- <button class="btn" @click="event => editProduct(product.prodID)" id=" button">Edit</button> -->
                 </td>
             </tr>
         </tbody>
     </table>
     <div>
-        <AddProduct></AddProduct>
+        <AddProduct class="btn" id="addBtn"></AddProduct>
         <!-- <button class="btn addButton" @click="event => AddProduct(product.prodID)" id="button">Add Product</button> -->
     </div>
 </template>
@@ -58,7 +58,7 @@ export default {
         },
     },
     mounted() {
-        this.$store.dispatch('fetchProducts')
+        this.$store.dispatch("fetchProducts")
     },
     methods: {
         deleteProduct(prodID) {

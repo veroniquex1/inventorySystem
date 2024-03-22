@@ -15,9 +15,9 @@
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                         aria-expanded="false">Dashboard</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/products">Products</a></li>
-                        <li><a class="dropdown-item" href="/suppliers">Suppliers</a></li>
-                        <li><a class="dropdown-item" href="/users">Users</a></li>
+                        <li><a class="dropdown-item" href="/products">Manage Products</a></li>
+                        <li><a class="dropdown-item" href="/suppliers">Manage Suppliers</a></li>
+                        <li><a class="dropdown-item" href="/users">Manage Users</a></li>
                         <li><a class="dropdown-item" href="/reports">Reports</a></li>
                     </ul>
                 </li>

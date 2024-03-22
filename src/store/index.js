@@ -11,7 +11,7 @@ const {
 } = useCookies();
 import router from "../router";
 import AuthenticateUser from "../service/AuthenticateUser";
-const invURL = "https://inventorysystem-djiy.onrender.com";
+const invURL = "https://inventorysystem-djiy.onrender.com/";
 
 export default createStore({
   state: {
@@ -238,7 +238,7 @@ export default createStore({
       try {
         let {
           result
-        } = (await axios.get(`${invURL}products/${packet?.id}`))
+        } = (await axios.get(`${invURL}products/product/${packet?.id}`))
         .data;
         if (result) {
           context.commit("setProduct", result);
