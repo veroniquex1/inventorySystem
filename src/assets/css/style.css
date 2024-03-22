@@ -10,7 +10,7 @@
 
 /* Navbar Styling */
 
-#navbar{
+#navbar, #footer{
     background-color: #4B0082 !important;
 }
 
@@ -76,3 +76,13 @@ img[alt="icon"]{
     margin-left: 5px;
 }
 
+/* Footer Styling */
+img[alt='initialLogo']{
+    height: 50px;
+    width: 50px;
+}
+
+img[alt='footer-icon']{
+    height: 20px;
+    width: 20px;
+}
