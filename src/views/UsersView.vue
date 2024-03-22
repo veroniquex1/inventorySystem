@@ -40,6 +40,8 @@
     </table>
     <div>
         <AddUser class="btn" id="addBtn"></AddUser>
+        <button @click="downloadPDF" class="btn btn-primary downloadButton">Download Report</button>
+
     </div>
 </template>
 
@@ -47,10 +49,12 @@
 
 import AddUser from '../components/AddUser.vue';
 import UpdateUser from '../components/UpdateUser.vue';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 export default {
     components: {
         UpdateUser,
-        AddUser,
+        AddUser
     },
     computed: {
         users() {
@@ -67,6 +71,17 @@ export default {
         UpdateUser(user) {
             let editUser = { userID: user.userID, username: user.username, firstName: user.firstName, lastName: user.lastName, gender: user.gender, userRole: user.userRole, userEmail: user.userEmail, userPwd: user.userPwd }
             this.$store.dispatch('UpdateUser', { id: user.userID, data: editUser })
+        },
+        downloadPDF() {
+            const element = document.querySelector('.table-responsive');
+            html2canvas(element).then(canvas => {
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                const imgData = canvas.toDataURL('image/png');
+                const imgWidth = 208;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                pdf.save('products_report.pdf');
+            });
         }
     }
 }
