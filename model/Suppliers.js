@@ -17,7 +17,7 @@ class Suppliers{
     }
 
     // fetch a single supplier
-    fetchSuppliers(req, res) {
+    fetchSupplier(req, res) {
         const dbQry = `
         SELECT suppID, suppNo, suppName, suppAddress, suppTel
         FROM Suppliers

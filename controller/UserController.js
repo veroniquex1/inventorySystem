@@ -1,12 +1,16 @@
 import express from 'express'
 import bodyParser from 'body-parser'
-import { users } from '../model/index.js'
-import { verifyToken } from '../middleware/userAuthentication.js'
+import {
+    users
+} from '../model/index.js'
+import {
+    verifyToken
+} from '../middleware/userAuthentication.js'
 
 const userRouter = express.Router()
 
 // get all users
-userRouter.get('/users', (req, res) => {
+userRouter.get('/', (req, res) => {
     try {
         users.fetchUsers(req, res)
     } catch (error) {
@@ -55,16 +59,16 @@ userRouter.patch('/update/:id', bodyParser.json(),
     })
 
 // delete user
-    userRouter.delete('/delete/:id', (req, res) => {
-        try {
-            users.deleteUser(req, res)
-        } catch (error) {
-            res.json({
-                status: res.errorCode,
-                message: "Could not delete user. Please try again"
-            })
-        }
-    })
+userRouter.delete('/delete/:id', (req, res) => {
+    try {
+        users.deleteUser(req, res)
+    } catch (error) {
+        res.json({
+            status: res.errorCode,
+            message: "Could not delete user. Please try again"
+        })
+    }
+})
 
 // user login
 userRouter.post('/login', bodyParser.json(), (req, res) => {
@@ -79,5 +83,6 @@ userRouter.post('/login', bodyParser.json(), (req, res) => {
 })
 
 export {
-    userRouter,express
+    userRouter,
+    express
 }

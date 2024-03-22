@@ -7,7 +7,7 @@ import {
 const productRouter = express.Router()
 
 // fetch products
-productRouter.get('/products', (req, res) => {
+productRouter.get('/', (req, res) => {
     try {
         products.fetchProducts(req, res)
     } catch (error) {
