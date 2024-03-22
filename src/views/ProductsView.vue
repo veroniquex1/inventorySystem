@@ -14,7 +14,7 @@
                 <th scope="col">Cost</th>
                 <th scope="col">Category</th>
                 <!-- <th scope="col">Total Cost</th> -->
-                <th scope="col">Prod URL</th>
+                <th scope="col">Prod Image</th>
                 <th scope="col">Edit | Delete</th>
             </tr>
         </thead>

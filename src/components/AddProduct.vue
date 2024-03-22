@@ -16,7 +16,7 @@
                                 v-model="payload.prodID" />
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control w-50 mx-auto" placeholder="Product Name"
+                            <input type="text" class="form-control w-50 mx-auto" placeholder="Product Number"
                                 v-model="payload.prodNo" />
                         </div>
                         <div class="mb-3">
@@ -47,8 +47,8 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                 Close
                             </button>
-                            <button type="submit" @click.prevent="addingProduct" class="btn btn-success"
-                                data-bs-dismiss="modal">
+                            <button type="submit" @click.prevent="addingProduct" class="btn"
+                                data-bs-dismiss="modal" id="crudBtn">
                                 Add Product
                             </button>
                         </div>

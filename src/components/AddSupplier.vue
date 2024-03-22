@@ -35,7 +35,7 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                 Close
                             </button>
-                            <button type="submit" @click.prevent="addingSupplier" class="btn btn-success"
+                            <button type="submit" @click.prevent="addingSupplier" class="btn " id="crudBtn"
                                 data-bs-dismiss="modal">
                                 Add Supplier
                             </button>
