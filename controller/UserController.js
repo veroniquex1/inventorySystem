@@ -16,7 +16,7 @@ userRouter.get('/', (req, res) => {
     } catch (error) {
         res.json({
             status: res.errorCode,
-            message: 'Cannot retrieve users. Please try again.'
+            // message: 'Cannot retrieve users. Please try again.'
         })
     }
 })

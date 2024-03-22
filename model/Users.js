@@ -1,5 +1,9 @@
-import { connection } from '../config/index.js'
-import { generateToken } from '../middleware/userAuthentication.js'
+import {
+    connection
+} from '../config/index.js'
+import {
+    generateToken
+} from '../middleware/userAuthentication.js'
 import {
     hash,
     compare
@@ -17,7 +21,6 @@ class Users {
             if (error) throw error
             res.json({
                 status: res.errorCode,
-                message: "could not retreive users",
                 results
             })
         })
@@ -40,36 +43,36 @@ class Users {
     }
 
     // create new user
-     async createUser(req, res) {
-         // Payload
-         let data = req.body
-         data.userPwd = await hash(data?.userPwd, 10)
-         let user = {
-             userEmail: data.userEmail,
-             userPwd: data.userPwd
-         }
-         const dbQry = `
+    async createUser(req, res) {
+        // Payload
+        let data = req.body
+        data.userPwd = await hash(data?.userPwd, 10)
+        let user = {
+            userEmail: data.userEmail,
+            userPwd: data.userPwd
+        }
+        const dbQry = `
         INSERT INTO Users
         SET ?;
         `
-         connection.query(dbQry, [data], (error) => {
-             if (error) {
-                 res.json({
-                     status: res.errorCode,
-                     message: 'An account already exists with this email. Please login.'
-                 })
-             } else {
-                 // generate a token
-                 let token = generateToken(user)
-                 res.json({
-                     status: res.errorCode,
-                     token,
-                     message: 'Successfully registered'
-                 })
-             }
-         })
+        connection.query(dbQry, [data], (error) => {
+            if (error) {
+                res.json({
+                    status: res.errorCode,
+                    message: 'An account already exists with this email. Please login.'
+                })
+            } else {
+                // generate a token
+                let token = generateToken(user)
+                res.json({
+                    status: res.errorCode,
+                    token,
+                    message: 'Successfully registered'
+                })
+            }
+        })
     }
-    
+
     // update user
     async updateUser(req, res) {
         const data = req.body
